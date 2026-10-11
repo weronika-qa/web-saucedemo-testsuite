@@ -1,218 +1,158 @@
-\# Plan Testów – Wyszukiwarka Booking.com
+Test Plan – Sauce Demo
 
+1\. Introduction
 
-
-\## 1. Wstęp
-
-Głównym celem działań testowych jest dostarczenie interesariuszom informacji o jakości dostarczanego produktu. Celem planu testów jest zapewnienie jakości i prawidłowego działania wyszukiwarki dostępnej na stronie \*\*booking.com\*\*. Testy mają na celu sprawdzenie funkcjonalności, wydajności oraz użyteczności wyszukiwarki, aby zapewnić użytkownikom bezproblemowe korzystanie z serwisu. W przygotowanym dokumencie zostały zebrane kluczowe informacje na temat działań testowych, wyszczególnione wszystkie komponenty oprogramowania poddawane weryfikacji oraz typy testów, jakie zostaną przeprowadzone.
-
-
+The main goal of the testing activities is to provide stakeholders with information regarding the quality of the delivered product. The purpose of this test plan is to ensure the quality and correct functionality of the website. The tests aim to verify the functionality, performance, and usability of the product search, account creation, and order processing to ensure a seamless user experience. This document gathers key information about testing activities, detailing all software components subject to verification and the types of tests to be conducted.
 
 \---
 
+2\. Scope of Testing
 
+Test types to be performed:
 
-\## 2. Zakres Testów
+Unit
 
+Functional
 
+Performance
 
-\### Realizowane typy testów:
+Test types that will NOT be performed:
 
-\* Jednostkowe
-
-\* Funkcjonalne
-
-\* Wydajnościowe
-
-
-
-\### Typy testów, które NIE będą przeprowadzane:
-
-\* \*\*Automatyczne\*\* – brak wystarczającego budżetu na etapie związanym z testowaniem oprogramowania.
-
-
+Automated 
 
 \---
 
+3\. Test Item
 
-
-\## 3. Przedmiot Testów
-
-Komponentem poddawanym testom jest \*\*wyszukiwarka booking.com\*\* z uwzględnieniem całej logiki filtrowania w odpowiednich polach.
-
-
+The component subject to testing is the https://sauce-demo.myshopify.com/ website.
 
 \---
 
+4\. Pass / Fail Criteria
 
+Pass: All test cases completed successfully; no critical bugs found.
 
-\## 4. Kryteria Zaliczenia / Nieuzyskania Zaliczenia
-
-
-
-\* \*\*Zaliczenie:\*\* Wszystkie przypadki testowe zakończone sukcesem; brak krytycznych błędów.
-
-\* \*\*Niezaliczenie:\*\* Wykrycie krytycznych błędów (np. brak możliwości wyszukiwania, nieprawidłowe wyniki, niedziałające filtry) lub wystąpienie więcej niż 5 błędów o wysokim priorytecie.
-
-
+Fail: Detection of critical bugs (e.g., inability to search, incorrect results, non-functioning filters) or occurrence of more than 5 high-priority bugs.
 
 \---
 
+5\. Entry and Exit Criteria
 
+5.1. Entry Criteria
 
-\## 5. Kryteria Wejścia i Wyjścia
+Defined business and technical requirements (documentation).
 
+Ready website open in the test environment.
 
+Prepared test cases.
 
-\### 5.1. Kryteria Wejścia
+5.2. Exit Criteria
 
-\* Zdefiniowane wymagania biznesowe i techniczne (dokumentacja).
+Execution of all planned tests.
 
-\* Gotowy moduł wyszukiwarki dostępny na środowisku testowym.
+Resolution of all critical and high-priority bugs.
 
-\* Przygotowane przypadki testowe.
+All components meet the specified assumptions in accordance with the documentation.
 
-
-
-\### 5.2. Kryteria Wyjścia
-
-\* Przeprowadzenie wszystkich zaplanowanych testów.
-
-\* Naprawienie wszystkich błędów krytycznych i o wysokim priorytecie.
-
-\* Spełnienie przez komponenty wszystkich ustalonych założeń zgodnie z dokumentacją.
-
-\* Wygenerowanie raportu końcowego z przeprowadzonych testów.
-
-
+Generation of the final test execution report.
 
 \---
 
+6\. List of Functional Requirements to be Tested
 
+Searching, adding products to the cart.
 
-\## 6. Lista Wymagań Funkcjonalnych do Przetestowania
+Displaying results according to the expected criteria.
 
-1\. Wprowadzanie kryteriów wyszukiwania (miejsce, data, liczba osób).
+Operation of filters (price, star rating, property type).
 
-2\. Wyświetlanie wyników zgodnie z oczekiwanymi kryteriami.
+Operation of sorting (by rating, distance, reviews).
 
-3\. Działanie filtrów (cena, liczba gwiazdek, typ obiektu).
+Displaying detailed property information (photos, description, ratings, availability).
 
-4\. Działanie sortowania (wg oceny, odległości, opinii).
+Handling errors or incomplete input data.
 
-5\. Wyświetlanie szczegółowych informacji o obiektach (zdjęcia, opis, oceny, dostępność).
+Compatibility with different browsers and mobile devices.
 
-6\. Obsługa błędów lub niepełnych danych wejściowych.
-
-7\. Kompatybilność z różnymi przeglądarkami i urządzeniami mobilnymi.
-
-8\. Szybkość działania wyszukiwarki i ładowania wyników.
-
-
+Search engine speed and result loading performance.
 
 \---
 
+7\. Test Environment
 
+Operating Systems: Windows, macOS, Linux, Android, iOS
 
-\## 7. Środowisko Testowe
+Browsers: Chrome, Edge, Mozilla Firefox, Opera, Brave, Safari
 
-\* \*\*Systemy operacyjne:\*\* Windows, macOS, Linux, Android, iOS
+Devices: Desktop PC, laptop, tablet, smartphone
 
-\* \*\*Przeglądarki:\*\* Chrome, Edge, Mozilla Firefox, Opera, Brave, Safari
-
-\* \*\*Urządzenia:\*\* Komputer, laptop, tablet, smartfon
-
-\* \*\*Baza testowa:\*\* Środowisko testowe z przygotowaną bazą danych symulującą rzeczywiste warunki działania.
-
-
+Test Database: Test environment with a prepared database simulating real-world operating conditions.
 
 \---
 
+8\. Test Schedule
 
+Stage 0: Verification of functionality based on User Stories (documentation)
 
-\## 8. Harmonogram Testów
+Stage 1: Preparation of test cases and test environment
 
-\* \*\*Etap 0:\*\* Weryfikacja funkcjonalności w oparciu o User Story (dokumentacja) – \*1 dzień\*
+Stage 2: Functional testing
 
-\* \*\*Etap 1:\*\* Przygotowanie przypadków testowych i środowiska testowego – \*1 tydzień\*
+Stage 3: Performance and usability testing
 
-\* \*\*Etap 2:\*\* Testy funkcjonalne – \*2 tygodnie\*
+Stage 4: Bug reporting and verification
 
-\* \*\*Etap 3:\*\* Testy wydajnościowe i użyteczności – \*2 tygodnie\*
-
-\* \*\*Etap 4:\*\* Raportowanie i weryfikacja błędów – \*1 tydzień\*
-
-\* \*\*Etap 5:\*\* Testy regresyjne – \*2 dni\*
-
-
+Stage 5: Regression testing
 
 \---
 
+9\. Test Report
 
+The final report will include:
 
-\## 9. Raport z Testów
+Test plan
 
-Raport końcowy będzie zawierał:
+List of test cases and their results (pass / fail)
 
-\* Plan testów
+List of identified bugs along with their priorities
 
-\* Listę przypadków testowych i ich wyniki (zaliczone / niezaliczone)
-
-\* Listę wykrytych błędów wraz z ich priorytetami
-
-\* Wnioski i rekomendacje
-
-
+Conclusions and recommendations
 
 \---
 
+10\. List of Tools
 
+Test Management: Jira, TestLink
 
-\## 10. Lista Narzędzi
+Performance Testing: Postman, JMeter, LoadRunner
 
-\* \*\*Zarządzanie testami:\*\* Jira, TestLink
-
-\* \*\*Automatyzacja:\*\* Selenium, Appium
-
-\* \*\*Testy wydajnościowe:\*\* Postman, JMeter, LoadRunner
-
-\* \*\*Raportowanie błędów:\*\* Jira, TestLink, Bugzilla
-
-
+Defect Tracking: Jira, TestLink, Bugzilla
 
 \---
 
+11\. Incident / Bug Management
 
+All detected bugs will be reported and tracked in JIRA.
 
-\## 11. Zarządzanie Incydentami / Błędami
+Bug management process:
 
-Wszystkie wykryte błędy będą zgłaszane i śledzone w programie \*\*JIRA\*\*.
+Bug Reporting – detailed description and attachments (screenshots, logs, video).
 
+Priority Assignment – Critical, High, Medium, Low.
 
+Bug Fixing – carried out by the development team.
 
-\### Proces zarządzania błędami:
-
-1\. \*\*Zgłoszenie błędu\*\* – dokładny opis oraz załączniki (zrzuty ekranu, logi, wideo).
-
-2\. \*\*Nadanie priorytetu\*\* – Krytyczny, Wysoki, Średni, Niski.
-
-3\. \*\*Naprawa błędu\*\* – realizowana przez zespół deweloperski.
-
-4\. \*\*Weryfikacja\*\* – re-test naprawionego błędu przeprowadzony przez zespół testerski.
-
-
+Verification – re-test of the fixed bug conducted by the testing team.
 
 \---
 
+12\. Roles and Responsibilities
 
+Test Manager: Planning and supervising the testing process.
 
-\## 12. Role i Odpowiedzialności
+Testers: Preparing test cases, executing tests, reporting bugs.
 
-\* \*\*Kierownik testów:\*\* Planowanie i nadzorowanie procesu testowego.
+Developers: Fixing reported bugs.
 
-\* \*\*Testerzy:\*\* Przygotowanie przypadków testowych, przeprowadzanie testów, raportowanie błędów.
-
-\* \*\*Deweloperzy:\*\* Naprawa zgłoszonych błędów.
-
-\* \*\*Analityk biznesowy:\*\* Weryfikacja zgodności wyników z wymaganiami biznesowymi.
+Business Analyst: Verifying compliance of results with business requirements.
 
