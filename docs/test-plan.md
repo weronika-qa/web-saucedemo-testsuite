@@ -14,8 +14,6 @@ The main goal of the testing activities is to provide stakeholders with informat
 | **Functional** | End-to-End (E2E) | In-Scope | Validates complete user path (Search → Cart → Checkout). |
 | **Non-Functional** | Performance | In-Scope | Checks page load times and response latency. |
 | **Non-Functional** | Compatibility | In-Scope | Verifies layout and behavior across browsers/devices. |
-| **Execution Method**| Test Automation | **Out-of-Scope** | Excluded due to budget constraints. |
-| **Non-Functional** | Security Testing | **Out-of-Scope** | Excluded from the current testing sprint. | 
 
 ---
 
